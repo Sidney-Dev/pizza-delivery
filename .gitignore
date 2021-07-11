@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+.data
+lib/config.js
+lib/stripe.js
+test.js

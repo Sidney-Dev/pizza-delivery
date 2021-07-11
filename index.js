@@ -19,6 +19,22 @@ var helpers = require('./lib/helpers')
 const httpProtocol = 'http';
 const httpsProtocol = 'https';
 
+const stripe = require('./lib/stripe')
+
+const cardDetails = {
+    'exp_month' : 7,
+    'exp_year' : 2022,
+    'cvc' : 314,
+    'number' : 4242424242424242
+}
+
+stripe.createToken(function(err){
+    console.log(err)
+})
+
+
+
+
 // ******************** HTTP Instance *************************
 // Instantiating the HTTP server
 var httpServer = http.createServer(function(req, res){
