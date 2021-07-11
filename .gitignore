@@ -105,5 +105,4 @@ dist
 
 .data
 lib/config.js
-lib/stripe.js
 test.js
